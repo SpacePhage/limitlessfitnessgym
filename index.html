@@ -4,11 +4,13 @@
 <!-- add required and recommended <meta> tags -->
 <meta charset="UTF-8">
 
-<meta name="viewport" content="width=device-width, initial-scale 1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <meta name="author" content="Ryan Mayberry">
 
-<meta name="description" content="">
+<title>Limitless Fitness - Transform Your Life</title>
+
+<meta name="description" content="Join Limitless Fitness and find the inner you with expert trainers, various classes, and various membership tiers.">
 
 <meta name="robots" content="index, follow">
 
@@ -33,7 +35,13 @@
 <!-- add alt text where necessary -->
 <!-- add responsive images for resolution switching -->
     
-      src="images/facility.jpg"
+      <img 
+      src="images/facility.jpg" 
+      srcset="images/facility-320w.jpg 320w,
+      images/facility-768w.jpg 768w"
+      sizes="(min-width: 768px) 768px,
+      100vw"
+      alt="Photo of the facility, including treadmills and a weight rack.">
 
   </header>
   <nav>
@@ -73,7 +81,12 @@
       </ul>
 <!-- add alt text where necessary -->
 <!-- add responsive images for resolution switching -->
-        src="images/classes.jpg"
+        <img src="images/classes.jpg" 
+        srcset="images/classes-320w.jpg 320w,
+      images/classes-768w.jpg 768w"
+      sizes="(min-width: 768px) 768px,
+      100vw"
+      alt="Photo three people squatting with 10kg barbells.">
 
     </section>
     <section>
@@ -85,7 +98,12 @@
       <a href="#">Book a Free Consultation today!</a>
 <!-- add alt text where necessary -->
 <!-- add responsive images for resolution switching -->
-        src="images/dumbells.jpg"
+        <img src="images/dumbells.jpg" 
+        srcset="images/dumbells-320w.jpg 320w,
+      images/dumbells-768w.jpg 768w"
+      sizes="(min-width: 768px) 768px,
+      100vw"
+      alt="Photo a rack of dumbells with various weights and sizes.">
 
     </section>
     <section>
@@ -97,7 +115,7 @@
         <li>Family & Group Plans: Get fit together and save more.</li>
       </ul>
       <section id="membership-form">
-        Join Limitless Fitness Today!
+        <h3>Join Limitless Fitness Today!</h3>
         <p>Fill out the form below to kickstart your fitness journey:</p>
 <!--add accessibility to the form-->
         <form method="POST" action="https://wp.zybooks.com/form-viewer.php">
@@ -109,19 +127,20 @@
 
           <label for="phone">Phone Number</label>
           <input type="tel" id="phone" name="phone" required>
+          
           Membership Type
             Select a Membership Option
             Monthly Membership
             Annual Membership
             Family & Group Plans
           Tell us about your fitness goals:
-          <button type="button">Submit</button>
+          <button type="submit">Submit</button>
         </form>
       </section>
     </section>
   </main>
   <aside>
-    Testimonials
+    <h2>Testimonials</h2>
     <q>
       Joining Limitless Fitness has completely transformed my approach to fitness. The supportive community and expert guidance have made all the difference! - Alex R.
     </q>
@@ -131,7 +150,7 @@
   </aside>
   <footer>
     <section>
-      Stay connected
+      <h2>Stay connected</h2>
       <ul>
         <li>
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#007BFF" width="35" height="35">
@@ -151,7 +170,7 @@
       </ul>
     </section>
     <section>
-      Contact Us
+      <h2>Contact Us</h2>
       <address>
         <p>1234 HIIT St. <br>
         Mesa, AZ 85222 <br>
