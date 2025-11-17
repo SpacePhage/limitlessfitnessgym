@@ -127,13 +127,23 @@
 
           <label for="phone">Phone Number</label>
           <input type="tel" id="phone" name="phone" required>
-          
-          Membership Type
-            Select a Membership Option
-            Monthly Membership
-            Annual Membership
-            Family & Group Plans
-          Tell us about your fitness goals:
+
+          <fieldset>
+            <legend>Membership Type</legend>
+            <p>Select a membership type:</p>
+              <label>
+                <input type="radio" name="membershipType" value="monthly">
+                Monthly Membership</label>
+              <label>
+                <input type="radio" name="membershipType" value="annual">
+                Annual Membership</label>
+              <label>
+                <input type="radio" name="membershipType" value="family">
+                Family & Group Plans</label>
+          </fieldset>
+          <label for="goals">Tell us about your fitness goals:</label>
+          <textarea name="goals" id="goals" rows="4"></textarea>
+
           <button type="submit">Submit</button>
         </form>
       </section>
